@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import styles from './Filter.module.css';
 import { useSelector, useDispatch } from 'react-redux';
-import actions from 'redux/actions';
+import { changeFilter } from 'redux/actions';
 
 const Filter = () => {
-  const filter = useSelector(state => state.contacts.filter);
+  const filter = useSelector(state => state.filter);
   const dispatch = useDispatch();
   const onChange = e => {
-    dispatch(actions.changeFilter(e.target.value));
+    dispatch(changeFilter(e.currentTarget.value));
   };
 
   return (

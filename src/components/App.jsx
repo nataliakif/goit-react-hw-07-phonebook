@@ -11,10 +11,7 @@ function App() {
       </Section>
       <Section title="Contacts">
         <Filter />
-        <Contacts
-        // contacts={filteredContacts()}
-        // onDeleteContact={deleteContact}
-        />
+        <Contacts />
       </Section>
     </>
   );
