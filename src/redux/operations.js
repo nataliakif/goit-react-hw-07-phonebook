@@ -33,6 +33,7 @@ export const deleteContact = createAsyncThunk(
   'contacts/deleteContact',
   async id => {
     const contact = await API.deleteContact(id);
+    console.log(contact);
     return contact;
   }
 );
